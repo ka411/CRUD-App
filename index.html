@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <td>
+        <form onsubmit="onFormSubmit(event)">
+            <div>
+                <label>Full Name*</label>
+                <input type="text" name="fullName" id="fullName" placeholder="Enter Full Name" required>
+            </div>
+            <div>
+                <label>EMP Code</label>
+                <input type="text" name="empCode" id="empCode" placeholder="Enter EMP Code">
+            </div>
+            <div>
+                <label>Salary</label>
+                <input type="text" name="salary" id="salary" placeholder="Enter Salary">
+            </div>
+            <div>
+                <label>City</label>
+                <input type="text" name="city" id="city" placeholder="Enter City">
+            </div>
+            <div class="form-action-buttons">
+                <input type="submit" name="Submit">
+            </div>
+        </form>
+    </td>
+
+    <td>
+        <table class="list" id="employeeList">
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>EMP Code</th>
+                    <th>Salary</th>
+                    <th>City</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be dynamically added here -->
+            </tbody>
+        </table>
+    </td>
+
+    <script src="script.js"></script>
+</body>
+</html>
